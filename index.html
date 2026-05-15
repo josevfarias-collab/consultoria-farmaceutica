@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>US Consultoria Farmacêutica</title>
+<meta name="description" content="Regularize, organize e cresça sua Empresa com segurança. Atendimento online em todo o Brasil."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container">
+    <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> (63) 99205-0375</span>
+    <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> consultoria@usfarmaceutica.com.br</span>
+  </div>
+</div>
+
+<header>
+  <nav>
+    <a href="#" class="logo">
+      <div class="logo-icon"><div class="logo-letters">US</div></div>
+      <div class="logo-text"><strong>US Consultoria</strong><small>Farmacêutica</small></div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#segmentos">Segmentos</a></li>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+    <a href="https://wa.me/5563992050375" class="btn-wpp-nav" target="_blank">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+      Atendimento
+    </a>
+    <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+  </nav>
+</header>
+
+<div class="mob-menu" id="mobMenu">
+  <button class="mob-close" onclick="toggleMenu()">✕</button>
+  <a href="#segmentos" onclick="toggleMenu()">Segmentos</a>
+  <a href="#servicos" onclick="toggleMenu()">Serviços</a>
+  <a href="#sobre" onclick="toggleMenu()">Sobre</a>
+  <a href="#contato" onclick="toggleMenu()">Contato</a>
+</div>
+
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-lines">
+    <svg viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0 100 C 20 0 50 0 100 100 Z" fill="none" stroke="white" stroke-width="0.1"/></svg>
+    <svg viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0 100 C 20 0 50 0 100 100 Z" fill="none" stroke="white" stroke-width="0.1"/></svg>
+  </div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge"><span class="dot"></span> Especialistas em Regulação Sanitária</div>
+      <h1>Sua Empresa <span class="gold">100% Regularizada</span> perante a ANVISA.</h1>
+      <p class="hero-tag">Consultoria farmacêutica de alto padrão para <strong>Farmácias, Distribuidoras e Indústrias</strong>. Do zero à operação legal.</p>
+      <div class="hero-ctas">
+        <button class="btn-primary" onclick="openModal()">
+          Solicitar Orçamento
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </button>
+        <a href="#segmentos" class="btn-outline">Ver Segmentos</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><div class="stat-num">+10</div><div class="stat-label">Anos de Exp.</div></div>
+        <div class="stat"><div class="stat-num">100%</div><div class="stat-label">Aprovação</div></div>
+        <div class="stat"><div class="stat-num">Todo</div><div class="stat-label">o Brasil</div></div>
+      </div>
+    </div>
+    <div class="hero-card">
+      <h3 class="hc-title">Segurança <span>Normativa</span></h3>
+      <ul class="sml">
+        <li><div class="sml-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><div class="sml-t"><strong>Conformidade Total</strong><small>Zero riscos com a vigilância</small></div></li>
+        <li><div class="sml-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><div class="sml-t"><strong>Agilidade em Processos</strong><small>Prazos reduzidos na ANVISA</small></div></li>
+        <li><div class="sml-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div><div class="sml-t"><strong>Gestão Documental</strong><small>Toda documentação organizada</small></div></li>
+      </ul>
+      <div class="hc-foot"><div class="online-dot"></div><span>Consultores <strong>Online agora</strong></span></div>
+    </div>
+  </div>
+</section>
+
+<div class="trust">
+  <div class="container">
+    <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Regularização ANVISA</div>
+    <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Certificação de Boas Práticas</div>
+    <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Gestão de SNGPC</div>
+    <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Autorização de Funcionamento</div>
+  </div>
+</div>
+
+<section id="segmentos">
+  <div class="container">
+    <div class="seg-head">
+      <div class="stag">Nossas Áreas</div>
+      <h2 class="stitle">Qual é o seu <span>segmento?</span></h2>
+      <p class="ssub">Clique no serviço desejado para conhecer os detalhes e solicitar um atendimento focado na sua necessidade.</p>
+    </div>
+    
+    <div class="seg-grid">
+      <button class="seg-btn featured" onclick="openModal()">
+        <div class="seg-left">
+          <div class="seg-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
+          <div class="seg-info">
+            <span class="seg-name">Empresa: Regularização Completa</span>
+            <span class="seg-sub">Consultoria técnica para legalização e conformidade total do seu estabelecimento.</span>
+          </div>
+        </div>
+        <div class="btn-soli-seg">Solicitar</div>
+      </button>
+
+      <button class="seg-btn" onclick="openModal()">
+        <div class="seg-left">
+          <div class="seg-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>
+          <div class="seg-info">
+            <span class="seg-name">SNGPC - Sistema Nacional de Gerenciamento</span>
+            <span class="seg-sub">Implantação e suporte no gerenciamento de produtos controlados e conformidade ANVISA.</span>
+          </div>
+        </div>
+        <div class="btn-soli-seg">Solicitar</div>
+      </button>
+
+      <button class="seg-btn" onclick="openModal()">
+        <div class="seg-left">
+          <div class="seg-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
+          <div class="seg-info">
+            <span class="seg-name">AFE - Autorização de Funcionamento</span>
+            <span class="seg-sub">Concessão, alteração e regularização da autorização obrigatória para operar legalmente.</span>
+          </div>
+        </div>
+        <div class="btn-soli-seg">Solicitar</div>
+      </button>
+
+      <button class="seg-btn" onclick="openModal()">
+        <div class="seg-left">
+          <div class="seg-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
+          <div class="seg-info">
+            <span class="seg-name">Autorização Especial - AE</span>
+            <span class="seg-sub">Obtenção e regularização de AE para medicamentos sujeitos a controle especial.</span>
+          </div>
+        </div>
+        <div class="btn-soli-seg">Solicitar</div>
+      </button>
+
+      <button class="seg-btn" onclick="openModal()">
+        <div class="seg-left">
+          <div class="seg-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg></div>
+          <div class="seg-info">
+            <span class="seg-name">SNCR - Controle de Receituários</span>
+            <span class="seg-sub">Implantação completa e regularização do sistema nacional de controle de receituários.</span>
+          </div>
+        </div>
+        <div class="btn-soli-seg">Solicitar</div>
+      </button>
+
+      <button class="seg-btn" onclick="openModal()">
+        <div class="seg-left">
+          <div class="seg-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg></div>
+          <div class="seg-info">
+            <span class="seg-name">CBPDA - Boas Práticas de Distribuição</span>
+            <span class="seg-sub">Certificação essencial para distribuidoras e armazenadoras garantirem qualidade e segurança.</span>
+          </div>
+        </div>
+        <div class="btn-soli-seg">Solicitar</div>
+      </button>
+
+      <button class="seg-btn" onclick="openModal()">
+        <div class="seg-left">
+          <div class="seg-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 20h20"/><path d="M5 20V8l7-4 7 4v12"/><path d="M9 20v-4h6v4"/></svg></div>
+          <div class="seg-info">
+            <span class="seg-name">CBPF - Boas Práticas de Fabricação</span>
+            <span class="seg-sub">Obtenção de certificados de fabricação, manuais técnicos e auditorias de conformidade industrial.</span>
+          </div>
+        </div>
+        <div class="btn-soli-seg">Solicitar</div>
+      </button>
+    </div>
+  </div>
+</section>
+
+<section id="servicos">
+  <div class="container">
+    <div class="sec-hd">
+      <div class="stag">Especialidades</div>
+      <h2 class="stitle">O que fazemos por <span>você</span></h2>
+    </div>
+    <div class="srv-grid">
+      <div class="srv-card">
+        <div class="srv-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <div class="srv-tag">Regulatório</div>
+        <h3 class="srv-title">Regularização ANVISA</h3>
+        <p class="srv-desc">Gestão completa para obtenção e renovação de licenças sanitárias.</p>
+        <ul class="srv-items">
+          <li>Concessão de AFE</li>
+          <li>Autorização Especial (AE)</li>
+          <li>Licença Sanitária Local</li>
+        </ul>
+        <button class="btn-srv-orc" onclick="openModal()">Solicitar Orçamento</button>
+      </div>
+      <div class="srv-card">
+        <div class="srv-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+        <div class="srv-tag">Qualidade</div>
+        <h3 class="srv-title">Certificação de Boas Práticas</h3>
+        <p class="srv-desc">Implementação de normas técnicas para CBPDA e CBPF.</p>
+        <ul class="srv-items">
+          <li>Manual de Boas Práticas</li>
+          <li>Procedimentos (POPs)</li>
+          <li>Treinamento de Equipe</li>
+        </ul>
+        <button class="btn-srv-orc" onclick="openModal()">Solicitar Orçamento</button>
+      </div>
+      <div class="srv-card">
+        <div class="srv-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg></div>
+        <div class="srv-tag">Operacional</div>
+        <h3 class="srv-title">Gestão de Controlados</h3>
+        <p class="srv-desc">Suporte especializado para sistemas SNGPC e inventários.</p>
+        <ul class="srv-items">
+          <li>Configuração de Sistema</li>
+          <li>Acompanhamento Técnico</li>
+          <li>Regularização de Estoque</li>
+        </ul>
+        <button class="btn-srv-orc" onclick="openModal()">Solicitar Orçamento</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="sobre">
+  <div class="container">
+    <div class="sobre-grid">
+      <div class="sobre-visual">
+        <div class="sobre-box">
+          <h3>Sua Segurança <span>Sanitária</span> é nossa prioridade.</h3>
+          <p>Com anos de experiência no mercado regulatório, a US Consultoria Farmacêutica nasceu para simplificar processos complexos e garantir que sua empresa opere com tranquilidade.</p>
+          <div class="sobre-badge">
+            <strong>10+</strong>
+            <span>Anos de Mercado</span>
+          </div>
+        </div>
+      </div>
+      <div class="sobre-text">
+        <div class="stag">Quem Somos</div>
+        <h2 class="stitle">Especialistas em <span>Resultados.</span></h2>
+        <p class="ssub">Não entregamos apenas papéis, entregamos a viabilidade do seu negócio. Nossa metodologia é focada em agilidade e conformidade técnica rigorosa.</p>
+        <div class="pilares">
+          <div class="pilar">
+            <div class="pilar-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div>
+            <div class="pilar-t"><strong>Foco Técnico</strong><span>Consultores farmacêuticos especializados em legislação.</span></div>
+          </div>
+          <div class="pilar">
+            <div class="pilar-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+            <div class="pilar-t"><strong>Segurança Jurídica</strong><span>Processos blindados contra autuações e multas.</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="canal">
+  <div class="container">
+    <div class="canal-card">
+      <div class="canal-info">
+        <div class="canal-tag">Dicas & Novidades</div>
+        <h2>Acompanhe nosso <span>Canal Oficial</span></h2>
+        <p>Fique por dentro das atualizações da ANVISA, prazos regulatórios e dicas exclusivas para o seu negócio farmacêutico.</p>
+      </div>
+      <div class="canal-btns">
+        <a href="https://wa.me/5563992050375" target="_blank" class="btn-canal">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+          Entrar no Grupo
+        </a>
+        <a href="https://instagram.com/usfarmaceutica" target="_blank" class="btn-insta">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          Siga no Instagram
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="processo">
+  <div class="container">
+    <div class="sec-hd" style="text-align: center;">
+      <div class="stag">Metodologia</div>
+      <h2 class="stitle">Como trabalhamos</h2>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">01</div>
+        <h4>Diagnóstico</h4>
+        <p>Analisamos a situação atual da sua empresa e documentos.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <h4>Planejamento</h4>
+        <p>Traçamos a rota mais rápida para a regularização total.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <h4>Execução</h4>
+        <p>Protocolamos e acompanhamos tudo junto aos órgãos.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">04</div>
+        <h4>Conformidade</h4>
+        <p>Sua empresa pronta para operar com segurança 100%.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contato">
+  <div class="container">
+    <div class="cta-c">
+      <div class="stag">Fale Conosco</div>
+      <h2>Pronto para <span>Regularizar</span> sua Empresa?</h2>
+      <p>Não deixe para depois. Evite multas e garanta o crescimento do seu negócio agora mesmo.</p>
+      <div class="cta-btns">
+        <button class="btn-wpp-cta" onclick="openModal()">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+          Solicitar Orçamento
+        </button>
+        <a href="https://instagram.com/usfarmaceutica" target="_blank" class="btn-insta-cta">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          Nosso Instagram
+        </a>
+      </div>
+      <div class="cta-phone">Ou ligue agora: <strong>(63) 99205-0375</strong></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <div class="logo-icon"><div class="logo-letters">US</div></div>
+          <div class="logo-text"><strong>US Consultoria</strong><small>Farmacêutica</small></div>
+        </a>
+        <p>Especialistas em regulação sanitária e consultoria farmacêutica em todo o Brasil.</p>
+      </div>
+      <div class="fcol">
+        <h5>Serviços</h5>
+        <ul class="flinks">
+          <li><a href="#segmentos">Empresas</a></li>
+          <li><a href="#segmentos">SNGPC</a></li>
+          <li><a href="#segmentos">AFE / AE</a></li>
+          <li><a href="#segmentos">Certificações</a></li>
+        </ul>
+      </div>
+      <div class="fcol">
+        <h5>Empresa</h5>
+        <ul class="flinks">
+          <li><a href="#sobre">Sobre Nós</a></li>
+          <li><a href="#canal">Canal Oficial</a></li>
+          <li><a href="#contato">Fale Conosco</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bot">
+      <p>&copy; 2024 US Consultoria Farmacêutica. Todos os direitos reservados.</p>
+      <p>Desenvolvido com excelência técnica.</p>
+    </div>
+  </div>
+</footer>
+
+<div class="modal-overlay" id="modalOrc" onclick="closeModalOut(event)">
+  <div class="modal-box">
+    <div class="modal-header">
+      <h2>Solicitar <span>Orçamento</span></h2>
+      <button class="modal-close" onclick="closeModal()">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="form-tabs">
+        <button class="ftab active" onclick="switchTab('pj')">🏢 Pessoa Jurídica</button>
+        <button class="ftab" onclick="switchTab('pf')">👤 Pessoa Física</button>
+      </div>
+
+      <div class="fpanel active" id="panel-pj">
+        <h3>Solicite já o seu Orçamento — <span>Pessoa Jurídica</span></h3>
+        <form id="form-pj" action="https://formspree.io/f/xpwzkgkz" method="POST">
+          <input type="hidden" name="_subject" value="Novo Orçamento PJ — US Consultoria"/>
+          <input type="hidden" name="tipo" value="Pessoa Jurídica"/>
+          <div class="fgroup">
+            <div class="field"><label>CNPJ</label><input type="text" id="cnpj" name="cnpj" placeholder="00.000.000/0000-00" required/></div>
+            <div class="field"><label>Pessoa para Contato</label><input type="text" name="contato" placeholder="Nome completo" required/></div>
+            <div class="field"><label>Telefone — Celular (Preferência WhatsApp)</label><input type="tel" name="telefone" placeholder="(00) 00000-0000" required/></div>
+            <div class="field"><label>E-mail</label><input type="email" name="email" placeholder="seu@email.com.br" required/></div>
+            <div class="field"><label>Segmento</label>
+              <select name="segmento" id="seg-pj">
+                <option value="">Selecione seu segmento</option>
+                <option value="Empresa">Empresa</option>
+                <option value="SNGPC">SNGPC</option>
+                <option value="AFE">AFE (Autorização de Funcionamento)</option>
+                <option value="AE">AE (Autorização Especial)</option>
+                <option value="SNCR">SNCR (Controle de Receituários)</option>
+                <option value="CBPDA">CBPDA — Distribuição/Armazenagem</option>
+                <option value="CBPF">CBPF — Boas Práticas de Fabricação</option>
+              </select>
+            </div>
+            <div class="field"><label>Solicitação</label><textarea name="solicitacao" placeholder="Descreva sua necessidade..."></textarea></div>
+          </div>
+          <button type="submit" class="btn-solicitar">Solicitar</button>
+          <div class="fsuccess" id="ok-pj"><div class="ck">✅</div><p>Orçamento enviado com sucesso!<br>Entraremos em contato em breve.</p></div>
+        </form>
+      </div>
+
+      <div class="fpanel" id="panel-pf">
+        <h3>Solicite já o seu Orçamento — <span>Pessoa Física</span></h3>
+        <form id="form-pf" action="https://formspree.io/f/xpwzkgkz" method="POST">
+          <input type="hidden" name="_subject" value="Novo Orçamento PF — US Consultoria"/>
+          <input type="hidden" name="tipo" value="Pessoa Física"/>
+          <div class="fgroup">
+            <div class="field"><label>CPF</label><input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" required/></div>
+            <div class="field"><label>Nome</label><input type="text" name="nome" placeholder="Seu nome completo" required/></div>
+            <div class="field"><label>Celular (Preferência WhatsApp)</label><input type="tel" name="telefone" placeholder="(00) 00000-0000" required/></div>
+            <div class="field"><label>E-mail</label><input type="email" name="email" placeholder="seu@email.com.br" required/></div>
+            <div class="field"><label>Segmento</label>
+              <select name="segmento" id="seg-pf">
+                <option value="">Selecione seu segmento</option>
+                <option value="Empresa">Empresa</option>
+                <option value="SNGPC">SNGPC</option>
+                <option value="AFE">AFE (Autorização de Funcionamento)</option>
+                <option value="AE">AE (Autorização Especial)</option>
+                <option value="SNCR">SNCR (Controle de Receituários)</option>
+                <option value="CBPDA">CBPDA — Distribuição/Armazenagem</option>
+                <option value="CBPF">CBPF — Boas Práticas de Fabricação</option>
+              </select>
+            </div>
+            <div class="field"><label>Solicitação</label><textarea name="solicitacao" placeholder="Descreva sua necessidade..."></textarea></div>
+          </div>
+          <button type="submit" class="btn-solicitar">Solicitar</button>
+          <div class="fsuccess" id="ok-pf"><div class="ck">✅</div><p>Orçamento enviado com sucesso!<br>Entraremos em contato em breve.</p></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<a class="float-wpp" href="https://wa.me/5563992050375?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20da%20US%20Consultoria." target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path class="wico" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path class="wico" d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.117 1.528 5.844L.057 23.571l5.866-1.539A11.943 11.943 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.856a9.847 9.847 0 0 1-5.035-1.381l-.36-.214-3.741.981.999-3.648-.236-.374A9.847 9.847 0 0 1 2.143 12C2.143 6.556 6.556 2.143 12 2.143c5.444 0 9.857 4.413 9.857 9.857 0 5.444-4.413 9.856-9.857 9.856z"/></svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
